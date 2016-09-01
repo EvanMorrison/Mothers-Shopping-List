@@ -1,0 +1,185 @@
+body {
+	font-family: 'Helvetica Neue', 'Open Sans';
+}
+
+h1 {
+	position: relative;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+
+.navbar
+ {
+	position: relative;
+	background-color: #5cb85c;
+}
+
+.navbar-brand {
+	font-size: 2em;
+	padding-top: .7em;
+}
+
+.navbar ul, .navbar a {
+	color: white !important;
+	text-shadow: 1px 1px 1px black;
+	background-color: #5cb85c !important;
+}
+
+#list-chooser {
+	font-size: .6em;
+}
+
+.navbar-right {
+	font-size: 2.5em;
+	padding-top: .2em;
+	padding-right: 2em;
+
+}
+
+.navbar a:hover {
+	background-color: rgb(102,194,102) !important;
+}
+
+#add-btn, #add-btn a {
+	background-color: #337ab7 !important; /*Bootstrap blue for primary buttons*/
+	color: #fff;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+}
+
+.form-row {
+	margin-bottom: 20px;
+}
+
+#sort, #sort a {
+	color: #ababab !important;
+	text-align: left;
+	width: 75vw;
+	margin-bottom: 15px;
+	font-size: 1.3em;
+}
+
+
+
+.glyphicon-sort-by-alphabet {
+	font-size: .8em;
+	margin-left: 5px;
+}
+
+/*.glyphicon-sort-by-alphabet:before {
+	position: absolute;
+	content: '';
+	border-right: 10px solid black;
+	border-top: 10px solid transparent;
+	border-bottom: 10px dotted transparent;
+	left: 50px;
+	background: transparent;
+}*/
+
+.glyphicon-sort-by-alphabet:after {
+	position: absolute;
+	content: '';
+	border-left: 10px solid transparent;
+	border-top: 10px solid #cdcdcd;
+	border-right: 10px solid transparent;
+	right: 0px;
+	bottom: -15px;
+	background: transparent;
+}
+
+#shopping-list, #completed-list {
+	padding-left: 0;
+	position: relative;
+}
+
+#shopping-list li, #completed-list li {
+	font-family: 'Open Sans';
+	font-size: 1.7em;
+	list-style-type: none;
+	transition: .2s ease;
+	position: relative;
+	padding-left: 5px;
+}
+
+#shopping-list li:nth-child(2n), #completed-list li:nth-child(2n) {
+	background: #dedede;
+}
+
+#shopping-list span {
+	font-size: 20px;
+	margin-right: .8em;
+	color: #337ab7;
+}
+
+#completed-list span {
+	font-size: 20px;
+	margin-right: .8em;
+	color: #5cb85c;
+}
+#shopping-list li:hover, #completed-list li:hover {
+	font-size: 2.2em;
+	transition: ease;
+	transform-origin: 0 0;
+	transition-duration: .2s;
+}
+
+
+#shopping-list span:hover, #completed-list span:hover {
+	cursor: pointer;
+}
+
+
+#completed-section {
+	position: relative;
+	margin-top: 40px;
+}
+
+#completed-list {
+	position: relative;
+}
+
+.glyphicon-remove-circle {
+	position: absolute;
+	right: 0;
+	top: 7px;
+	color: #ababab !important;
+}
+
+.glyphicon-remove-circle:hover {
+	cursor: pointer;
+}
+
+.glyphicon-refresh {
+	position: relative;
+	color: #ababab !important;
+	font-size: .8em !important;
+	left: 20px;
+}
+
+.vanish {
+	animation: itemVanish .3s ease 1;
+	transform-origin: 100% 100%;
+}
+
+@keyframes itemVanish {
+	to {
+		transform: scale(0)
+	}
+}
+
+.appear {
+	animation: itemAppear .3s ease 1;
+	transform-origin: 100% 0;
+}
+
+@keyframes itemAppear {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}

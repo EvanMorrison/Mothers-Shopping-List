@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required meta tags must come first-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Mom's Shopping List</title>
+    
+	<!--Google fonts-->    
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat" rel="stylesheet">
+	
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!--Local CSS-->
+    <link rel="stylesheet" href="mothers-shopping-list-style.css" type="text/css">
+</head>
+<body>
+		<nav class="navbar navbar-static-top">
+			<div class="container-fluid">
+				<div class="navbar navbar-header">
+					<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="shopping-list-nav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button> -->
+					<a class="navbar-brand" href="#">ListAwesome</a>
+				</div><!-- navbar-header -->
+		
+				<div class="navbar-right" id="shopping-list-nav">
+					<ul class="nav navbar-nav">
+						<li class="active dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Lists<span class="caret"></span></a>
+							<ul id="list-chooser" class="dropdown-menu">
+								<li><a id="moms-list" href="#">Mom's List</a></li>
+								<li><a id="evans-list" href="#">Evan's List</a></li>
+								<li><a id="reset-list" href="#" >Reset List</a></li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div> <!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav><!-- navbar -->
+
+	<div class="container-fluid">
+		<header class="row">
+			<div class="col-xs-12">
+				<h1 id="list-name-heading">Mom's Shopping List</h1>
+			</div>
+		</header> <!-- row -->
+
+		<section class="row form-row">
+			<form class="col-xs-6 col-xs-offset-3">
+				<label for="item-name">Add An Item</label>
+				
+				<div class="input-group">
+					<input type="text" id="new-item-name" class="form-control  input-group-item">
+					<span id="add-btn" type="submit" class="btn input-group-addon"><a id="add-link" href="#">add</a></span>
+				</div>
+			</form>	
+		</section> <!-- row input -->
+		<section id="to-get-section" class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+				<p id="sort"><a href="#"><span class="glyphicon glyphicon-sort-by-alphabet"></span></a></p>
+				<ul id="shopping-list">
+					
+				</ul>
+			</div>
+		</section> <!-- row main content -->
+		<section id="completed-section" class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+				<h3>Completed</h3>
+				<ul id="completed-list">
+					
+				</ul>
+			</div>
+		</section>	
+	</div> <!--container-fluid of all content -->
+     
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="mothers-shopping-list-script.js"></script>
+</body>
+</html>

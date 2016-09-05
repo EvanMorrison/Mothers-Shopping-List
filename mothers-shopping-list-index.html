@@ -21,30 +21,33 @@
     <link rel="stylesheet" href="mothers-shopping-list-style.css" type="text/css">
 </head>
 <body>
-		<nav class="navbar navbar-static-top">
-			<div class="container-fluid">
-				<div class="navbar navbar-header">
-					<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="shopping-list-nav">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button> -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
 					<a class="navbar-brand" href="#">ListAwesome</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
 				</div><!-- navbar-header -->
-		
-				<div class="navbar-right" id="shopping-list-nav">
-					<ul class="nav navbar-nav">
-						<li class="active dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Lists<span class="caret"></span></a>
-							<ul id="list-chooser" class="dropdown-menu">
-								<li><a id="moms-list" href="#">Mom's List</a></li>
-								<li><a id="evans-list" href="#">Evan's List</a></li>
-								<li><a id="reset-list" href="#" >Reset List</a></li>
-							</ul>
-						</li>
-						
-					</ul>
-				</div> <!-- /.navbar-collapse -->
+				
+
+					<div class="collapse navbar-collapse navbar-right" id="collapse-menu">
+						<ul class="nav navbar-nav" id="shopping-list-nav">
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Lists <span class="caret"></span>
+								</a>
+								<ul id="list-chooser" class="dropdown-menu">
+									<li><a id="moms-list" href="#">Mom's List</a></li>
+									<li><a id="evans-list" href="#">Evan's List</a></li>
+									<li class="divider"></li>
+									<li><a id="reset-list" href="#" >Reset Current List</a></li>
+								</ul>
+							</li>
+							
+						</ul>
+					</div>
+
 			</div><!-- /.container-fluid -->
 		</nav><!-- navbar -->
 

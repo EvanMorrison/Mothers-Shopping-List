@@ -9,38 +9,67 @@ h1 {
 
 }
 
+@media (max-width:768px) {
+	.navbar-right, 	{
+		float:right;
+	}
+}
+
 
 .navbar
  {
-	position: relative;
 	background-color: #5cb85c;
+	border:none;
 }
 
-.navbar-brand {
-	font-size: 2em;
-	padding-top: .7em;
+.navbar-header {
+	font-size: 1.5em;
+}
+
+.navbar-toggle {
+	border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background: white;
+	border: none;
+}
+
+#shopping-list-nav {
+	background: #5cb85c;
 }
 
 .navbar ul, .navbar a {
 	color: white !important;
+	font-size: 1.25em;
 	text-shadow: 1px 1px 1px black;
-	background-color: #5cb85c !important;
+	background: #5cb85c;
+
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: rgb(102, 194, 102);
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: rgb(102,194,102);
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	background-color: rgb(102, 194, 102);	
 }
 
 #list-chooser {
 	font-size: .6em;
 }
 
-.navbar-right {
+/*.navbar-right {
 	font-size: 2.5em;
-	padding-top: .2em;
 	padding-right: 2em;
 
-}
+}*/
 
-.navbar a:hover {
+/*.navbar a:hover {
 	background-color: rgb(102,194,102) !important;
-}
+}*/
 
 #add-btn, #add-btn a {
 	background-color: #337ab7 !important; /*Bootstrap blue for primary buttons*/
